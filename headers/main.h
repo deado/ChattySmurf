@@ -4,9 +4,7 @@
 
 using namespace std; //apparently after I stopped C++ namespaces took over...
 
-
-//created custom class
-/* Client class is used for all local user information to be stored during runtime. */
+/* Client class: Local user information to be stored during runtime. */
 class Client {
 //public variables
   public:
@@ -18,14 +16,14 @@ class Client {
     string ip;
 };
 
-/* DCC Class is going to be used for Direct Client-to-Client transfers */
+/* DCC Class: Direct Client-to-Client transfers */
 class Dcc {
   public:
     int port;
     string hostname;
 };
 
-/* Server Class; Server and connection information variables */
+/* Server Class: Server and connection information variables */
 class Server {
   public:
     int port;
