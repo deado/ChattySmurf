@@ -1,0 +1,14 @@
+ChattySmurf
+
+IRC Client written in C++ as a training model to attempt to reteach myself the cpp language. It's never intended that this will ever
+get used on a daily basis or by anyone but me... for a very short time. I really don't even use IRC that much anymore. The reason
+I decided to go with an IRC client as opposed to anything else is that it is fairly well-rounded in a lot of aspects. There is need
+for input, output, sockets and much more. There is user interaction, system interaction and internet communication. I have written an
+IRC client in the past using VB6 so I do have experience in this area which should make things a little easier. The IRC RFC is
+open and pretty damn simple as well.
+
+The original plan was to jump right in and make this with a GUI and the full works... but yeah I was pretty lost. I never got too
+good at cpp. So like I've said many times throughout my life, some times you need to resort to "stick to the basics". So starting
+from scratch we will begin with a console program that is going to be extremely annoying and no where near a realistic choice to
+use for more than just debug, testing and diagnostics. I don't know if it will ever get an ncurses UI before the GUI comes. Chances
+are that this project will not even get completed... ever. Just kind of how it works out sadly enough.
