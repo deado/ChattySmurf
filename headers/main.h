@@ -1,8 +1,11 @@
 #include <iostream> //standard i/o streaming to stdio c lib
 #include <unistd.h> //POSIX; getopt and much much more =D
 #include <string> //dont think this is included in iostream...
+//#include <stdlib.h>
 
 using namespace std; //apparently after I stopped C++ namespaces took over...
+
+void parseData(string data);
 
 /* Client class: Local user information to be stored during runtime. */
 class Client {
@@ -21,6 +24,10 @@ class Dcc {
   public:
     int port;
     string hostname;
+    string username;
+    string filename;
+    double filesize;
+
 };
 
 /* Server Class: Server and connection information variables */
@@ -33,9 +40,9 @@ class Server {
 };
 
 /* Custom funtion; show working inside header files; no use yet */
-int test()
+void parseData(string data)
 {
-  cout<<"Made it into the header file!\n";
-  return(0);
+  cout << "parseData Function\n";
+  cout << data << endl;
 }
 

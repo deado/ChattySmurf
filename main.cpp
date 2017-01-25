@@ -7,7 +7,7 @@ It sucks and probably will never be 100% completed.
 int main()
 {
   cout<<"Hello World!\n"; //standard output
-  test(); //call custom function
+  parseData("Test data...");
 
   Client foo; //define foo New Client;
   foo.username = "deado"; //set username
