@@ -5,7 +5,9 @@
 
 using namespace std; //apparently after I stopped C++ namespaces took over...
 
+void initClient();
 void parseData(string data);
+void parseCommand(string cmd);
 
 /* Client class: Local user information to be stored during runtime. */
 class Client {
@@ -17,7 +19,16 @@ class Client {
     string email;
     string hostname;
     string ip;
-};
+  void display() {
+    cout << "Username: " << username << endl;
+    cout << "ident: " << ident << endl;
+    cout << "Full Name: " << fullname << endl;
+    cout << "EMail: " << email << endl;
+    cout << "Hostname: " << hostname << endl;
+    cout << "IP Address: " << ip << endl;
+  }
+
+}client;
 
 /* DCC Class: Direct Client-to-Client transfers */
 class Dcc {
@@ -39,10 +50,26 @@ class Server {
     bool issecure;
 };
 
-/* Custom funtion; show working inside header files; no use yet */
+/* initClient: This might end up changing or going away. Used at startup to read configuration files and populate local variables.
+  Might end up running out of profiless or something of the sort. */
+void initClient()
+{
+ // Client client;
+  client.username = "deado";
+  client.ident = "waldoworx";
+  client.fullname = "Where's Waldo?!";
+  client.email = "something@fake.net";
+}
+
+/* parseData: Parse incoming data */
 void parseData(string data)
 {
   cout << "parseData Function\n";
   cout << data << endl;
 }
 
+/* parseCommand: Parse user commands and data */
+void parseCommand(string cmd)
+{
+
+}

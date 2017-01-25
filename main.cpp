@@ -9,9 +9,11 @@ int main()
   cout<<"Hello World!\n"; //standard output
   parseData("Test data...");
 
-  Client foo; //define foo New Client;
-  foo.username = "deado"; //set username
-  cout << foo.username << endl; //output and flush
+  cout << "Calling initClient()...\n";
+  initClient();
+
+  cout << "Calling client.display()...\n";
+  client.display();
   return 0;
 }
 
