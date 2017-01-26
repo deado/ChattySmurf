@@ -1,5 +1,5 @@
 
-#define NO_COLOR	0
+#define RESET_COLOR	0
 #define BOLD_ON		1
 #define ITALIC_ON	3
 #define UNDERLINE_ON	4

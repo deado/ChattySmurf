@@ -7,8 +7,6 @@
 using namespace std; //apparently after I stopped C++ namespaces took over...
 
 void initClient();
-void parseData(string data);
-void parseCommand(string cmd);
 
 /* Client class: Local user information to be stored during runtime. */
 class Client {
@@ -60,17 +58,4 @@ void initClient()
   client.ident = "waldoworx";
   client.fullname = "Where's Waldo?!";
   client.email = "something@fake.net";
-}
-
-/* parseData: Parse incoming data */
-void parseData(string data)
-{
-  cout << "parseData Function\n";
-  cout << data << endl;
-}
-
-/* parseCommand: Parse user commands and data */
-void parseCommand(string cmd)
-{
-
 }

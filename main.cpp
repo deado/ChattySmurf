@@ -3,6 +3,7 @@ IRC Client written in cpp by deado.
 It sucks and probably will never be 100% completed.
 */
 #include "headers/main.h" //include custom header file with the fun stuff...
+#include "parser.cpp"
 
 int main()
 {
