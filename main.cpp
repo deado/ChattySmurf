@@ -13,6 +13,7 @@ int main()
   initClient();
 
   cout << "Calling client.display()...\n";
+  cout << "\033[0;36m Test line for colors?\n";
   client.display();
   return 0;
 }

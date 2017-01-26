@@ -1,6 +1,7 @@
 #include <iostream> //standard i/o streaming to stdio c lib
 #include <unistd.h> //POSIX; getopt and much much more =D
 #include <string> //dont think this is included in iostream...
+#include "colors.h" //color defines
 //#include <stdlib.h>
 
 using namespace std; //apparently after I stopped C++ namespaces took over...
