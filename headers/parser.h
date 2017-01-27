@@ -1,2 +1,2 @@
 void parseData(string data);
-void parseCommand(string cmd);
+void parseCommand(string data);

@@ -1,3 +1,3 @@
 #!/bin/sh
 
-g++ -o smurf main.cpp
+g++ -o smurf main.cpp parser.cpp show.cpp

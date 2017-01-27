@@ -1,8 +1,4 @@
-#include <iostream> //standard i/o streaming to stdio c lib
-#include <unistd.h> //POSIX; getopt and much much more =D
-#include <string> //dont think this is included in iostream...
 #include "colors.h" //color defines
-//#include <stdlib.h>
 
 using namespace std; //apparently after I stopped C++ namespaces took over...
 
@@ -19,12 +15,12 @@ class Client {
     string hostname;
     string ip;
   void display() {
-    cout << "Username: " << username << endl;
+    cout << "\033[0;32mUsername: " << username << endl;
     cout << "ident: " << ident << endl;
     cout << "Full Name: " << fullname << endl;
     cout << "EMail: " << email << endl;
     cout << "Hostname: " << hostname << endl;
-    cout << "IP Address: " << ip << endl;
+    cout << "IP Address: " << ip << "\033[0m" << endl;
   }
 
 }client;
