@@ -7,6 +7,7 @@ You can go back to clean up the code and remove all the excessive outputs after 
 are working the way you want them. */
 #include <iostream>
 #include <string> //get access to all the main client infos
+#include <stdlib.h>
 //#include <unistd.h>
 //#include "headers/parser.h"
 //#include "headers/show.h"
@@ -17,13 +18,19 @@ void printMsg(string msg, string msg_type);
 
 
 void parseData(string data) {
-  //cout << "\033[0;31m[I]\033[0m Entering parseData()\n";
-  //cout << data << endl;
   printMsg("Entering parseData()","INFO");
   printMsg(data,"INFO");
 }
 
 void parseCommand(string data) {
-  printMsg("Made it inside parseCommand!","INFO");
-  printMsg(data,"INFO");
+  string cmd = data.substr(1,data.length());
+//  printMsg(cmd,"DEBUG");
+  if (cmd == "help") {
+    // Haven't made class Chatty or Smurf yet... so waiting for smurf_help()
+    printMsg("Help list coming soon...","INFO");
+  } else if (cmd == "exit") {
+    exit(0);
+  } else {
+    printMsg("Unknown command","ERROR");
+  }
 }

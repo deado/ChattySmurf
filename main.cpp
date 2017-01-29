@@ -27,8 +27,11 @@ int main()
   bool endLoop = false;
   while (!endLoop) {
     cin >> userInput;
-    if (userInput == "exit") { endLoop = true; }
-    printMsg(userInput,"DEBUG");
+    if (userInput.substr(0,1) == "/") {
+      parseCommand(userInput);
+    } else {
+      printMsg(userInput,"MSG");
+   }
   }
   return 0;
 }
