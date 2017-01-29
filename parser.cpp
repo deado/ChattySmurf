@@ -17,12 +17,13 @@ void printMsg(string msg, string msg_type);
 
 
 void parseData(string data) {
-  cout << "\033[0;31m[I]\033[0m Entering parseData()\n";
-  cout << data << endl;
-  printMsg("msg data","URGENT");
+  //cout << "\033[0;31m[I]\033[0m Entering parseData()\n";
+  //cout << data << endl;
+  printMsg("Entering parseData()","INFO");
+  printMsg(data,"INFO");
 }
 
-void parseCommand() {
-  cout << "[I] Entering parseCommand()\n";
-//  cout << cmd << endl;
+void parseCommand(string data) {
+  printMsg("Made it inside parseCommand!","INFO");
+  printMsg(data,"INFO");
 }

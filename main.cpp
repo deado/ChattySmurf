@@ -9,24 +9,26 @@ It sucks and probably will never be 100% completed.
 #include "headers/main.h" //include custom header file with the fun stuff...
 //#include "parser.cpp"
 #include "headers/parser.h"
-
+#include "headers/show.h"
 //void parseData(string data);
 
 int main()
 {
   /* Collect and populate client vars and do 'startup' stuff */
-  cout << "Calling initClient()...\n";
+  printMsg("Calling initClient()...","INFO");
   initClient();
 
-  cout<<"Hello World!\n"; //standard output
   parseData("Test data");
 
-  cout << "Calling client.display()...\n";
-  cout << "\033[0;36m Test line for colors?\033[0m\n";
+  printMsg("Calling client.display()...","INFO");
   client.display();
 
-  cout << "Ending program\n";
-
+  string userInput;
+  bool endLoop = false;
+  while (!endLoop) {
+    cin >> userInput;
+    if (userInput == "exit") { endLoop = true; }
+    printMsg(userInput,"DEBUG");
+  }
   return 0;
 }
-
