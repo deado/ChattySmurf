@@ -1,3 +1,5 @@
+#ifndef COLORS_H
+#define COLORS_H
 
 #define RESET_COLOR	0
 #define BOLD_ON		1
@@ -30,3 +32,5 @@
 #define B_CYAN          46
 #define B_WHITE         47
 #define B_DEFAULT       49
+
+#endif

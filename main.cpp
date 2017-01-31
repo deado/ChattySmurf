@@ -12,6 +12,8 @@ It sucks and probably will never be 100% completed.
 #include "headers/show.h"
 //void parseData(string data);
 
+const string Smurf::escChar = "\033[";
+
 int main()
 {
   /* Collect and populate client vars and do 'startup' stuff */

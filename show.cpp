@@ -18,6 +18,8 @@ void printMsg(string msg, string msg_type) {
     cout << msg << endl;
   } else if (msg_type == "DEBUG") {
     cout << "\033[0;35m[DBG]\033[0m " << msg << endl;
+  } else if (msg_type == "HELP") {
+    cout << "\033[0;33m[??]\033[0m " << msg << endl;
   } else {
       cout << "Unknown msg_type: " << msg_type << endl;
   }
