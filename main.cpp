@@ -4,15 +4,47 @@ It sucks and probably will never be 100% completed.
 */
 
 #include <iostream>
+#include <stdlib.h>
 #include <string>
 #include <unistd.h>
-#include "headers/main.h" //include custom header file with the fun stuff...
-//#include "parser.cpp"
-#include "headers/parser.h"
-#include "headers/show.h"
-//void parseData(string data);
+#include "headers/main.h"
 
-const string Smurf::escChar = "\033[";
+void printMsg(string msg, string msg_type) {
+//  cout << "Made inside printMsg()\n";
+//  cout << msg << endl;
+//  cout << msg_type << endl;
+
+  if (msg_type == "INFO") {
+    cout << "\033[0;32m[I]\033[0m " << msg << endl;
+  } else if (msg_type == "ERROR") {
+    cout << "\033[0;31m[!!]\033[0m " << msg << endl;
+  } else if (msg_type == "MSG") {
+    cout << msg << endl;
+  } else if (msg_type == "DEBUG") {
+    cout << "\033[0;35m[DBG]\033[0m " << msg << endl;
+  } else if (msg_type == "HELP") {
+    cout << "\033[0;33m[??]\033[0m " << msg << endl;
+  } else {
+      cout << "Unknown msg_type: " << msg_type << endl;
+  }
+}
+
+void parseData(string data) {
+  printMsg("Entering parseData()","INFO");
+  printMsg(data,"INFO");
+}
+
+void parseCommand(string data) {
+  string cmd = data.substr(1,data.length());
+//  printMsg(cmd,"DEBUG");
+  if (cmd == "help") {
+    smurf.help();
+  } else if (cmd == "exit") {
+    exit(0);
+  } else {
+    printMsg("Unknown command","ERROR");
+  }
+}
 
 int main()
 {
