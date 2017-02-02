@@ -1,3 +1,9 @@
+/* 02-02-2017 11:00am [CS-00000002] */
+- Changed my double space endents to single tabs. I didn't do this before because I feel a tab pushes too far over; but its easier/faster.
+- Added #include <ncurses.h>
+- Compile works with including ncurses lib
+- Began setting up ncurses
+
 /* 02-02-2017 9:40am [CS-00000001]
 - Reverting back to few files. I'm not splitting unless I need to.
 - Converting to ncurses instead of pure console

@@ -18,7 +18,9 @@ class Smurf {
     static const string escChar;
   void help() {
     printMsg("Some list of commands coming soon...","HELP");
-    printMsg("/help\t-\tShow this command list","HELP");
+    printMsg("/connect <host>,<port>,<password>\t- Connect to <host>:<port> using <password>, if any.","HELP");
+    printMsg("/help\t- Show this command list","HELP");
+    printMsg("/exit\t- Exit the client","HELP");
   }
 }smurf;
 

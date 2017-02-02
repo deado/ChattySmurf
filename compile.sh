@@ -1,3 +1,3 @@
 #!/bin/sh
 
-g++ -o smurf main.cpp 
+g++ -lncurses -o smurf main.cpp 
