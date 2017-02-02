@@ -20,7 +20,7 @@ class Smurf {
     printMsg("Some list of commands coming soon...","HELP");
     printMsg("/help\t-\tShow this command list","HELP");
   }
-};
+}smurf;
 
 /* Client class: Local user information to be stored during runtime. */
 class Client {
@@ -74,4 +74,4 @@ void initClient()
   client.email = "something@fake.net";
 }
 
-#endif MAIN_H
+#endif

@@ -3,4 +3,4 @@
 
 void printMsg(string msg, string msg_type);
 
-#endif SHOW_H
+#endif

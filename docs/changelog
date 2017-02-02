@@ -1,0 +1,5 @@
+/* 02-02-2017 9:40am [CS-00000001]
+- Reverting back to few files. I'm not splitting unless I need to.
+- Converting to ncurses instead of pure console
+- Started changelog I'm going to try and keep updated best I can
+- Going to start and try to maintain a build number

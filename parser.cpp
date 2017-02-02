@@ -11,12 +11,11 @@ are working the way you want them. */
 //#include <unistd.h>
 //#include "headers/parser.h"
 //#include "headers/show.h"
-//#include "headers/main.h"
+#include "headers/main.h"
 
 using namespace std;
 
 void printMsg(string msg, string msg_type);
-class Smurf;
 
 void parseData(string data) {
   printMsg("Entering parseData()","INFO");
@@ -27,7 +26,7 @@ void parseCommand(string data) {
   string cmd = data.substr(1,data.length());
 //  printMsg(cmd,"DEBUG");
   if (cmd == "help") {
-    Smurf.help();
+    smurf.help();
   } else if (cmd == "exit") {
     exit(0);
   } else {
